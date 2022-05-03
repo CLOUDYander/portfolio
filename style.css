@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap');
+/*https://www.figma.com/file/vzFjGHgagareyBKrDgR4BO/Portafolio-Template-(Community)?node-id=153%3A137*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+}
+
+.header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 68px;
+background: #171718;
+border-bottom: 2px solid #26292D; 
+padding: 10px;
+}
+
+.logo{
+display: flex;
+margin-left: 100px;
+}
+
+.a{
+ display: flex;
+ flex-direction: row;
+ margin-right: 100px;
+}
+
+.text{
+    font-size: 20px;
+    font-family: 'DM Sans';
+    color: beige;
+    margin-right: 10%;
+    width: 100px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 850px; 
+    background: #171718;
+}
+
+.main_face{
+    display: flex;
+    margin-top: 100px;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    width: 568px;
+    height: 452px;
+
+    margin-top: 100px;
+    margin-left: 300px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    letter-spacing: 0.44px;
+
+    color: #FFFFFF;
+}
+
+.main_text_h1{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 71px;
+
+letter-spacing: -0.5px;
+
+color: #FFFFFF;
+}
+
+.face{
+display: flex;
+width: 448px;
+height: 547px;
+margin-left: 250px;
+border-radius: 8px;
+}
+
+.kurs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 848px;
+    background-color: #171718;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    color: #FFFFFF;
+}
+
+.blocks_hobby{
+    display: flex;
+    flex-direction: row;
+    height: 620px;
+    margin-top: 30px;
+}
+
+.block_hobby{
+width: 354px;
+height: 298px;
+left: 165px;
+top: 100px;
+padding: 24px;
+background: #1C1E22;
+border-radius: 8px;
+margin-left: 30px;
+}
