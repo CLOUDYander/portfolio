@@ -1,87 +1,439 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header class="header">
-        <div class="logo">
-            <h2 class="text">ArtTech Andrey</h2>
-        </div>
-        <div class="a">
-            <p class="text">Ok</p>
-            <p class="text">Ok</p>
-            <p class="text">Ok</p>
-            <p class="text">Ok</p>
-            <p class="text">Ok</p>
-        </div>
-    </header>
-    <div class="main">
-        <div class="main_face"> 
-            <img class="face" src="./zqgakMMyH9b7yv7vOTxHoQuNyNsO9l8zgCIhrkLR0W2iwyaYY4pHnz3e6RGinfEO0fN9-u2qSwQ6vCTQJ9cdPMrY.jpg">
-        </div>
-        <div class="main_text">
-            <h1 class="main_text_h1">Веб-программирование<br></h1>
-            <p>Всем привет, меня зовут <b>Андрей</b><br><br>
-               На моём курсе вы учитесь создавать веб-страницы и выкладывать их в сеть. Мы сможем вместе разобраться в основах веб-программирования и к концу курса мы создадим свой первый сайт. Что мы должны будем понять?<br><br>
-               Веб-разработчики создают и поддерживают часть сайта, которую видят пользователи. С помощью языка JavaScript они оживляют детали страницы: кнопки, формы, изображения, карточки товаров. <br><br>
-               Каждый день появляются новые устройства, приложения, сайты. Они должны быть удобными, поэтому задач у веб-разработчиков много. Многие компании готовы нанимать младших специалистов с минимальным опытом.<br><br>
-                andreyivanov3630@gmail.com</p>
-        </div>
-    </div>
-    <div class="kurs">
-        <p class="hobby">Что входит в обучение?</p>
-        <div class="blocks_hobby">
-            <div class="block_hobby">
-                <img class="icon" src="./device-mobile.svg">
-                <h1 class="h1_block">Responsive design<br><br></h1>
-                <p class="p_block">Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto</p>
-            </div>
-            <div class="block_hobby">
-                <img class="icon" src="./code.svg">
-                <h1 class="h1_block">Responsive design<br><br></h1>
-                <p class="p_block">Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto</p>
-            </div>
-            <div class="block_hobby"> 
-                <img class="icon" src="./user-add.svg">
-                <h1 class="h1_block">Responsive design<br><br></h1>
-                <p class="p_block">Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto</p>
-            </div>    
-        </div>
-        <div class="blocks_hobby">
-            <div class="block_hobby">
-                <img class="icon" src="./Icon.svg">
-                <h1 class="h1_block">Responsive design<br><br></h1>
-                <p class="p_block">Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto</p>
-            </div>
-            <div class="block_hobby">
-                <img class="icon" src="./icon2.svg">
-                <h1 class="h1_block">Responsive design<br><br></h1>
-                <p class="p_block">Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto</p>
-            </div>
-            <div class="block_hobby">
-                <img class="icon" src="./lol.svg">
-                <h1 class="h1_block">Responsive design<br><br></h1>
-                <p class="p_block">Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto</p>     
-            </div>
-    </div>
-    <footer>
-        <div>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="./images/VzSyWBJEkOH5kZRYDXaUGouR91hTw18V4NLAUNySXTcPOZf55SxWy8uI51QrSCiI2MXa7Ss9a1ISwcBeGiLV2smX.jpg">
+</head>
+<style>
+  .blocks{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff; 
+    transition: 6s;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+  .block{
+  padding: 45px 25px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  margin-right: 2%;
+  border: 1px rgba(77, 87, 222, 0.3) solid;
+  border-radius: 30px;
+  }
+  .block:hover{
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    background: #fff; 
+    transition: 0.5s;
+  }
+  .block_inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block_img{
+    display: flex;
+    margin-top: 20px;
+    width: 95%;
+  }
+  .features_area {
+  padding-bottom: 170px; }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .main_title {
+  text-align: center;
+  margin-bottom: 100px; }
+
+  .main_title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+   }
+
+  .feature_item {
+  padding: 45px 25px;
+  text-align: center;
+  background: #f9f9fd;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.4s ease 0s; }
+
+  .feature_item img {
+    margin-bottom: 35px; }
+
+  .feature_item h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+
+  .feature_item p {
+    margin-bottom: 0px; }
+
+  .feature_item:hover {
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    background: #fff; }
+
+.ul {
+  padding: 15px;
+  margin: 0 auto;
+  list-style: none;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+ li:nth-child(6n + 1) {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+li:nth-child(3n + 1) {
+  grid-column-end: span 2;
+}
+
+ li:nth-child(9n) {
+  grid-row-end: span 2;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  background-color: white;
+}
+
+.bottom-container{
+  display: block;
+  margin-top: 100px;
+}
+
+
+/* Собственно сам слайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider .prev{
+  display: block;
+  
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+</style>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>Привет</h1>
+      <h2>я <span class="pro">веб</span>-программист.</h2>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img width="600px" src="images/WkrJDa5ky5Yqsw4d9qDiypLYwpew6IgxR4V65OOzn88s7xEbw6tHdcRVr0jejYmNkMWBKBvcPWeKWor758FYPwTk-round.png" alt="angela-profile-img">
+      <h2>Это я</h2>
+      <p class="intro">Я занимаюсь веб-разработкой, иными словами, я делаю сайты. Я ❤️ кофе и чтение книг.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>Что я умею?</h2>
+      <div class="skill-row">
+        <img class="code-img" src="https://media.giphy.com/media/3p50WGyUqeU5W/giphy.gif" alt="code-img">
+
+        <h3>HTML разработка</h3>
+        <p>Я начал увлекаться этим ещё когда был в школе. Это не так уж и сложно, как многие могут подумать. Просто не стоит бояться начать делать что-нибудь новое для себя и всё обязательно получится!</p>
+
+      </div>
+      <div class="skill-row">
+        <img class="chilli-img" src="images/chillies.png" alt="chillies-img">
+
+        <h3>CSS разработка</h3>
+        <p>Для меня - это самая приятная часть работы, ведь я могу создать с помощью css что-то действительно красивое. Если вы запишетесь на мой курс, то сможете также, а может даже лучше</p>
+
+      </div>
+    </div>
+    <h2>Мои поводы гордиться собой!</h2>
+    <div class="blocks">
+      <div class="row">
+        <div class="block">
+          <div class="block_inside">
+            <img class="block_img" src="https://perekop-museum.ru/images/jmgallery/thumbnails/__5/_-___22_20161228_1360773502.jpg" >
+            <h4>Я получил его в 7 классе</h4>
+          </div>
         </div>
-        <div>
-            
+        <div class="block">
+          <div class="block_inside">
+            <img class="block_img" src="https://perekop-museum.ru/images/jmgallery/thumbnails/__5/_-___22_20161228_1360773502.jpg" >
+            <h4>Я получил его в 7 классе</h4>
+          </div>
         </div>
-        <div>
-            
+        <div class="block">
+          <div class="block_inside">
+            <img class="block_img" src="https://perekop-museum.ru/images/jmgallery/thumbnails/__5/_-___22_20161228_1360773502.jpg" >
+            <h4>Я получил его в 7 классе</h4>
+          </div>
         </div>
-        <div>
-            
         </div>
-    </footer>
+
+      </div>
+    </div>
+  </div>
+    <section class="features_area">
+      <div class="container">
+        <div class="">
+          <div class="">
+            <div class="main_title">
+              <h2>Чему я смог научиться? </h2>
+              <p>
+                Я прошёл путь от самых основ веб-программирования, постепенно делая свой <br> первый сайт в виде портфолио
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <div class="feature_item">
+              <img src="img/services/s1.png" alt="">
+              <h4>HTML</h4>
+              <p>Это база и костяк вашего будущего сайта</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="feature_item">
+              <img src="img/services/s2.png" alt="">
+              <h4>CSS</h4>
+              <p>Это красивая обёртка вашего будущего сайта</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="feature_item">
+              <img src="img/services/s3.png" alt="">
+              <h4>Github</h4>
+              <p>Я смогу сохранить свой сайт!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="slider">
+      <div class="item">
+          <img src="./img/maxresdefault.jpg" alt="Первый слайд">
+          <div class="slideText">Это было сложно</div>
+      </div>
+  
+      <div class="item">
+          <img src="./img/maxresdefault.jpg" alt="Второй слайд">
+          <div class="slideText">Но я вроде как</div>
+      </div>
+  
+      <div class="item">
+          <img src="./img/maxresdefault.jpg" alt="Третий слайд">
+          <div class="slideText">Смог понять веб</div>
+      </div>
+  
+      <a class="prev" onclick="minusSlide()">&#10094;</a>
+      <a class="next" onclick="plusSlide()">&#10095;</a>
+  </div>
+  
+  <div class="slider-dots">
+      <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+      <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+      <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+  </div>
+    <ul class="ul">
+      <li><img class="img" src="https://sun9-65.userapi.com/s/v1/ig2/JArQ2BcynpjhAS91MyVRslT_JgnGAjBgGsnifXkLZzKsyt1AXe1YwS4FIHtqUu7u7V0JgkYUSEFD65e0ZQCRMCTh.jpg?size=719x1080&quality=96&type=album" alt="wheat"></li>
+      <li><img class="img" src="https://sun9-31.userapi.com/s/v1/ig1/8y3W4sXB-NO_1H6tHbv4nKdYWUUUbF4XKgDmc-8U_iH1qmUr-5BTrb9gMUySs968uk4hXsmZ.jpg?size=719x1080&quality=96&type=album" alt="wedding"></li>
+      <li><img class="img" src="https://sun9-62.userapi.com/s/v1/ig1/L9l4cgLKLMYqcw4QnU1XhOlPKoDUqzXDxQ7VjWEzVZ0NPLrKXlIrFV6XyJl1wHSvI9pSBQWx.jpg?size=1280x852&quality=96&type=album" alt="vet"></li>
+      <li><img class="img" src="https://sun9-51.userapi.com/s/v1/ig2/OjKBokh2HpfZz73GvjAes0eOg9xFD26vaOXcOqsrcsYSALIBJfOjR9706dRa3o0HBfznFLucqG5uQ2_UtB2hy5W2.jpg?size=1280x852&quality=96&type=album" alt="veggies"></li>
+      <li><img class="img" src="https://sun9-37.userapi.com/s/v1/if1/rNszN1HfpZifoAIfryJuJmelp-5vG1A9wl-4b9K49UBJ9143z4fsRUrvX5YPwG8L6Z2ezc9f.jpg?size=1280x852&quality=96&type=album" alt="veggies 2"></li>
+      <li><img class="img" src="https://sun9-17.userapi.com/s/v1/if1/uAcCs62GobnQ291Uiybd86Qfj3XmTcDA0iIqEC-ln8lYIJJs0z2P1KVc8iboxTrJSUKM7g1x.jpg?size=1280x852&quality=96&type=album" alt="tobacco"></li>
+      <li><img class="img" src="https://sun9-83.userapi.com/s/v1/if1/ANx7qf9C8hk6CdaSaT2sK92VWzTLQkbbxke_qkKKNLwPbnc6utv93bboSH71rVAtcdHr0n_1.jpg?size=719x1080&quality=96&type=album" alt="tiara"></li>
+      <li><img class="img" src="https://sun9-29.userapi.com/s/v1/if1/kh3zz8WWHFfHoNk7FKR15_Dhr2kHG-9iz2dvLurO_X3jfbjYWJXXj1DjSnktlROf6LZcdijr.jpg?size=1280x853&quality=96&type=album" alt="teddy luv"></li>
+      <li><img class="img" src="https://sun9-61.userapi.com/s/v1/if1/kbS0I0_I_xqinqWrYnPFtZCITcSS8eRG98UsOyNF_tLnRygKpfM6ri5yLhFZ2M4aqN2iN0bi.jpg?size=720x480&quality=96&type=album" alt="swim"></li>
+      <li><img class="img" src="https://sun9-54.userapi.com/s/v1/if1/omAKUuxlJDi4igeYt06IPNITCDTL4hZnGrpNPf3So-8tqOAy11SK8d_6tgQBQk724w-KvhiJ.jpg?size=1280x853&quality=96&type=album" alt="surfing"></li>
+      <li><img class="img" src="https://sun9-29.userapi.com/s/v1/ig1/3_e7f4jdwGivIE2gq72KLM0JUI6b-NZpTaFOTH3h0eDs82fmP3ffsVG_xU2EpzXjCmjAQNEm.jpg?size=810x1080&quality=96&type=album" alt="sunset"></li>
+      <li><img class="img" src="https://sun9-50.userapi.com/s/v1/if1/ALXXffN0MhbItqkpDYH7bohdhNWrnKf-gdfwS8gHBUhfifxzi_x29KgNUpj2DCfzhL4uslHs.jpg?size=960x720&quality=96&type=album" alt="sunflower"></li>
+      <li><img class="img" src="https://sun9-29.userapi.com/s/v1/if1/hhjCG3MLsocxFRH1myC7cz6LshIncgjINryu4AOYoEAXurrVP897Su3tEvQXnQryRjOzEo54.jpg?size=810x1080&quality=96&type=album" alt="summersip"></li>
+      <li><img class="img" src="https://i.ytimg.com/vi/VOJxvx9kf6s/maxresdefault.jpg" alt="stress"></li>
+      <li><img class="img" src="https://sun9-77.userapi.com/s/v1/if1/YX-cjarYBWSeuIuzLScPm4JeABg4Kqm1T3nqtiEqaF140h5wQpJz35l_frw1b_hX_nNMyRdd.jpg?size=1280x960&quality=96&type=album" alt="spaniel"></li>
+      <li><img class="img" src="https://sun9-54.userapi.com/s/v1/if1/0v5r4N0Yy7ZoCrbF7zFtOKTc4E04axcKdVGw6rGTXOMhL7w6rNho2JhqizHzcU7nU5iiIcMP.jpg?size=810x1080&quality=96&type=album" alt="spaniel 2"></li>
+      <li><img class="img" src="https://sun9-87.userapi.com/s/v1/if1/Wdwbf_IiE_OZ_6IbrCkSJ6ExA326LVtkCKNUqQd78k2uc1nTlAPye3vh5uY9bRjnYB7q3cMr.jpg?size=810x1080&quality=96&type=album" alt="soccer"></li>
+      <li><img class="img" src="https://sun9-23.userapi.com/s/v1/if1/LgpEWpnRlhrJ2lg_2IHM3S3VaTtgkqHpbY_BLgz8oAjvWVnDJLZAUYfw0QCbB0BlbBIIV_-N.jpg?size=810x1080&quality=96&type=album" alt="snowflake"></li>
+      <li><img class="img" src="https://sun9-11.userapi.com/s/v1/if1/iTy7Yiu--1-4BIRVf--Fi8D7XfpIpFhgJLeCLE7RD6kc7WsQAEXvTooDGS34ivb-2eC1heX2.jpg?size=1280x960&quality=96&type=album" alt="sniff"></li>
+    </ul>
+    <hr>
+    <div class="contact-me">
+      <h2>Запись на курс</h2>
+      <h3>Вам понравилось то, что вы увидели?</h3>
+      <p class="contact-message">Если вы хотите присоединиться, то можете перейти в группу "АртТех"</p>
+      <a class="btn" href="https://vk.com/mkbboro">ЗАПИСАТЬСЯ</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://vk.com/thisisyander">Мой вк</a>
+    <p class="copyright">© 2022 АртТех.</p>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+    function plusSlide() {
+        showSlides(slideIndex += 1);
+    }
+    
+    /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+    function minusSlide() {
+        showSlides(slideIndex -= 1);  
+    }
+    
+    /* Устанавливает текущий слайд */
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    /* Основная функция слайдера */
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("item");
+        var dots = document.getElementsByClassName("slider-dots_item");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+      </script>
 </body>
+
 </html>
